@@ -1,5 +1,5 @@
 
-# Flutter (flutter-sdk)
+# Flutter (dart-sdk)
 
 Install the Flutter SDK
 
@@ -7,7 +7,7 @@ Install the Flutter SDK
 
 ```json
 "features": {
-    "ghcr.io/jarrodcolburn/features/flutter-sdk:0": {}
+    "ghcr.io/FoodieAppServices/vsc-features/dart-sdk:0": {}
 }
 ```
 
@@ -29,4 +29,4 @@ Only Flutter SDK tools are installed. Not Android/
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/jarrodcolburn/features/blob/main/src/flutter-sdk/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/FoodieAppServices/vsc-features/blob/main/src/dart-sdk/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

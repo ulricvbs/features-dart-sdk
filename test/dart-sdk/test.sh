@@ -14,16 +14,16 @@
 #    "remoteUser": "root"
 # }
 #
-# Thus, the value of all options will fall back to the default value in 
+# Thus, the value of all options will fall back to the default value in
 # the Feature's 'devcontainer-feature.json'.
 # For the 'hello' feature, that means the default favorite greeting is 'hey'.
 #
 # These scripts are run as 'root' by default. Although that can be changed
 # with the '--remote-user' flag.
-# 
+#
 # This test can be run with the following command:
 #
-#    devcontainer features test \ 
+#    devcontainer features test \
 #                   --features hello   \
 #                   --remote-user root \
 #                   --skip-scenarios   \
@@ -38,7 +38,7 @@ source dev-container-features-test-lib
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "Android accpet licenses" bash -c "yes | sdkmanager --licenses"
+check "Flutter doctor" bash -c "dart --version"
 
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.
