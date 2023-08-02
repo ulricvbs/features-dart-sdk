@@ -5,7 +5,7 @@ BASEURL="https://storage.googleapis.com/dart-archive/channels"
 DART_VER=3.0.7
 export DEBIAN_FRONTEND="noninteractive"
 apt update
-apt install -y --no-install-recommends ca-certificates bash curl file git unzip xz-utils zip libglu1-mesa jq xz-utils
+apt install -y --no-install-recommends curl
 
 case "$(dpkg --print-architecture)" in
 amd64)
