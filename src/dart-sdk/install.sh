@@ -5,7 +5,13 @@ BASEURL="https://storage.googleapis.com/dart-archive/channels"
 DART_VER=3.0.7
 export DEBIAN_FRONTEND="noninteractive"
 apt update
-apt install -y --no-install-recommends curl
+apt install -y --no-install-recommends \
+    curl \
+    ca-certificates \
+    unzip \
+    xz-utils \
+    zip \
+    file
 
 case "$(dpkg --print-architecture)" in
 amd64)
