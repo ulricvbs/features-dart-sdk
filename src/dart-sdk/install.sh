@@ -1,6 +1,12 @@
 #!/bin/sh
 set -eux
 
+BASEURL="https://storage.googleapis.com/dart-archive/channels"
+DART_VER=3.0.7
+export DEBIAN_FRONTEND="noninteractive"
+apt update
+apt install -y --no-install-recommends ca-certificates bash curl file git unzip xz-utils zip libglu1-mesa jq xz-utils
+
 case "$(dpkg --print-architecture)" in
 amd64)
     DART_SHA256=cccd5300faa5a9abce12a5f77586e26350028cea82bb4ff8eeb55641b58a2e1d
@@ -15,9 +21,9 @@ arm64)
     SDK_ARCH="arm64"
     ;;
 esac
+
 SDK="dartsdk-linux-${SDK_ARCH}-release.zip"
-BASEURL="https://storage.googleapis.com/dart-archive/channels"
-URL="$BASEURL/stable/release/3.0.7/sdk/$SDK"
+URL="$BASEURL/stable/release/${DART_VER}/sdk/$SDK"
 curl -fLO "$URL"
 echo "$DART_SHA256 *$SDK" | sha256sum --check --status --strict -
 unzip "$SDK"
