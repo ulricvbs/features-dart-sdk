@@ -13,8 +13,7 @@
 &mdash; [Dart programming language | Dart](https://dart.dev/)
 
 This feature installs the Dart SDK to `/usr/lib/dart` by downloading it from
-Google's Dart archive service. It also adds the [Dart VS Code extension]. x86
-and ARM architectures are supported.
+Google's Dart archive service. It also adds the [Dart VS Code extension].
 
 ## Usage
 
@@ -27,7 +26,7 @@ like this:
 ```jsonc
 // devcontainer.json
 {
-  "features": {
+ "features": {
     "ghcr.io/devcontainers-community/features/dart-sdk": {}
   }
 }
@@ -37,33 +36,10 @@ like this:
 
 ### Options
 
-- **`version`:** A version of the Dart SDK like `3` or `latest`. This **does**
-  support incomplete version specifiers like `3` instead of `3.0.0`. The default
-  is `latest`.
-
-- **`channel`:** Choose a specific channel of the Dart SDK distribution to
-  download and install. Options are `stable`, `beta`, `dev`, and `main`. The
-  default is `stable`.
-
-### Specifying extensions
-
-This feature installs any version with the `version` option and `channel`
-option. Check [the Dart SDK archive] for channel details.
-
-```json
-"features": {
-    "ghcr.io/devcontainers-community/features/dart:1": {
-        "version": "3",
-        "channel": "beta"
-    }
-}
-```
-
-Note that the beta and dev channels use suffix-based version matching, so only
-versions ending with channel name (e.g. `3.1.0-63.1.beta`) can be installed.
+- **`version`:** A version of the Dart SDK like `3.0.7`. Must be a complete
+  version identifier. The default is `3.0.7`.
 
 <!-- prettier-ignore-start -->
 [this vs code blog post]: https://code.visualstudio.com/blogs/2022/09/15/dev-container-features
 [dart vs code extension]: https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code
-[Dart SDK archive]: https://dart.dev/get-dart/archive
 <!-- prettier-ignore-end -->
