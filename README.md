@@ -2,6 +2,8 @@
 
 # Dart SDK Dev Container Feature
 
+🎯 Installs the Dart SDK
+
 <p align=center>
   <img src="https://thum.io/get/width/800/crop/600/noanimate/https://dart.dev/">
 </p>
