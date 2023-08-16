@@ -25,7 +25,7 @@ jobs:
       matrix:
         include:
           - image: mcr.microsoft.com/devcontainers/base:ubuntu
-            options: '{ "version": "3.0.0" }'
+            options: '{ "version": "2.9.0-4.0.dev-1" }'
           - image: debian:bookworm-slim
     runs-on: ubuntu-latest
     steps:
