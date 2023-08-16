@@ -17,5 +17,12 @@
             ]
         }
     },
-    "options": {}
+    "options": {
+        "version": {
+            "type": "string",
+            "description": "Dart SDK version",
+            "proposals": ["latest", "3.0.7"],
+            "default": "latest"
+        }
+    }
 }
