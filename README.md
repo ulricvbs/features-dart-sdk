@@ -37,7 +37,7 @@ like this:
 ### Options
 
 - **`version`:** A version of the Dart SDK like `3.0.7`. Must be a complete
-  version identifier. The default is `3.0.7`.
+  version identifier or `latest`. The default is `latest`.
 
 <!-- prettier-ignore-start -->
 [this vs code blog post]: https://code.visualstudio.com/blogs/2022/09/15/dev-container-features
