@@ -1,6 +1,7 @@
 {
     "name": "Dart",
     "id": "dart-sdk",
+    "legacyIds": ["dart"],
     "version": "1.0.0",
     "description": "Install the Dart SDK",
     "documentationURL": "https://devcontainers.community/features-dart-sdk/",
