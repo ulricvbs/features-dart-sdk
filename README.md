@@ -5,7 +5,7 @@
 🎯 Installs the Dart SDK
 
 <p align=center>
-  <img src="https://thum.io/get/width/800/crop/600/noanimate/https://dart.dev/">
+  <img width=500 src="https://thum.io/get/width/800/crop/600/noanimate/https://dart.dev/">
 </p>
 
 > Dart is a client-optimized language for fast apps on any platform
