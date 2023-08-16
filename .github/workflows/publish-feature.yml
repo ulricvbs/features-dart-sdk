@@ -19,6 +19,4 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - uses: devcontainers-community/publish-feature@v0
-        with:
-          image: ghcr.io/${{ github.repository_owner }}/features/*
+      - uses: devcontainers-community/publish-feature@v1
